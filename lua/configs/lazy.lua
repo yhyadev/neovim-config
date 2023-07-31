@@ -14,15 +14,15 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	-- Theme
 	{
-		"catppuccin/nvim",
-		name = "catppuccin",
+		"marko-cerovac/material.nvim",
 		priority = 1000,
 		config = function()
-			require("catppuccin").setup({
-				flavour = "mocha",
-			})
+			vim.g.material_style = "deep ocean"
+            require("material").setup({
+                lualine_style = 'stealth'
+            })
 
-			vim.cmd([[colorscheme catppuccin]])
+			vim.cmd([[colorscheme material]])
 		end,
 	},
 
