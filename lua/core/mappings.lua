@@ -16,3 +16,6 @@ keymap("n", "<leader>ca", vim.lsp.buf.code_action)
 
 -- Jump To Definition
 keymap("n", "<leader>gd", vim.lsp.buf.definition)
+
+-- Command Line Shortcut
+keymap("n", "<leader>;", ":")
