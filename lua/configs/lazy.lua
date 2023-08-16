@@ -59,8 +59,6 @@ require("lazy").setup({
 		build = "make install_jsregexp",
 		dependencies = "rafamadriz/friendly-snippets",
 	},
-    --- Java
-    { "mfussenegger/nvim-jdtls" },
 	-- File Explorer
 	{
 		"nvim-tree/nvim-tree.lua",
