@@ -131,6 +131,13 @@ require("lazy").setup({
 			require("nvim-autopairs").setup({})
 		end,
 	},
+    -- Fast Search
+    {
+        "ggandor/leap.nvim",
+        config = function ()
+            require('leap').add_default_mappings()
+        end
+    },
 	-- Mini Terminal
 	{
 		"NvChad/nvterm",
