@@ -6,6 +6,7 @@ null_ls.setup({
 	debug = false,
 	sources = {
 		formatting.black,
+        formatting.clang_format,
 		formatting.golines,
 		formatting.prettier,
 		formatting.rustfmt,
