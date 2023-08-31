@@ -18,9 +18,9 @@ require("lazy").setup({
 		priority = 1000,
 		config = function()
 			vim.g.material_style = "deep ocean"
-            require("material").setup({
-                lualine_style = 'stealth'
-            })
+			require("material").setup({
+				lualine_style = "stealth",
+			})
 
 			vim.cmd([[colorscheme material]])
 		end,
@@ -131,13 +131,13 @@ require("lazy").setup({
 			require("nvim-autopairs").setup({})
 		end,
 	},
-    -- Fast Search
-    {
-        "ggandor/leap.nvim",
-        config = function ()
-            require('leap').add_default_mappings()
-        end
-    },
+	-- Fast Search
+	{
+		"ggandor/leap.nvim",
+		config = function()
+			require("leap").add_default_mappings()
+		end,
+	},
 	-- Mini Terminal
 	{
 		"NvChad/nvterm",
@@ -153,5 +153,10 @@ require("lazy").setup({
 		config = function()
 			require("nvterm").setup()
 		end,
+	},
+	-- Sourcegraph for Neovim (Used to add Cody AI)
+	{
+		"sourcegraph/sg.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 })
