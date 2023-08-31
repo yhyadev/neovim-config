@@ -158,5 +158,9 @@ require("lazy").setup({
 	{
 		"sourcegraph/sg.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
+
+        keys = {
+            {"cody"}
+        }
 	},
 })
