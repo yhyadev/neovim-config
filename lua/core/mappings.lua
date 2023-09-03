@@ -19,3 +19,6 @@ keymap("n", "<leader>gd", vim.lsp.buf.definition)
 
 -- Command Line Shortcut
 keymap("n", "<leader>;", ":")
+
+-- Rename faster with lsp
+keymap("n", "<leader>r", vim.lsp.buf.rename)
