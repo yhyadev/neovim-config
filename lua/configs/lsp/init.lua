@@ -1,6 +1,8 @@
 local lspconfig = require("lspconfig")
 
-lspconfig.clangd.setup({})
+require("configs.lsp.custom")
+
+lspconfig.cls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.rust_analyzer.setup({})
 lspconfig.gopls.setup({})
