@@ -24,6 +24,7 @@ lspconfig.lua_ls.setup({
 })
 lspconfig.emmet_ls.setup({})
 lspconfig.html.setup({})
+lspconfig.cssls.setup({})
 
 require("configs.lsp.mason")
 require("configs.lsp.null-ls")
