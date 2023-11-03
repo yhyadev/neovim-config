@@ -3,6 +3,7 @@ local lspconfig = require("lspconfig")
 require("configs.lsp.custom")
 
 lspconfig.clangd.setup({})
+lspconfig.cmake.setup({})
 -- lspconfig.cls.setup({})
 lspconfig.tsserver.setup({})
 lspconfig.rust_analyzer.setup({})
