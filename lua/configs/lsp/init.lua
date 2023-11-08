@@ -1,5 +1,7 @@
 local lspconfig = require("lspconfig")
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities()
+
 lspconfig.clangd.setup({})
 lspconfig.cmake.setup({})
 lspconfig.tsserver.setup({})
@@ -21,8 +23,12 @@ lspconfig.lua_ls.setup({
 	},
 })
 lspconfig.emmet_ls.setup({})
-lspconfig.html.setup({})
-lspconfig.cssls.setup({})
+lspconfig.html.setup({
+	capabilities = capabilities,
+})
+lspconfig.cssls.setup({
+	capabilities = capabilities,
+})
 
 require("configs.lsp.mason")
 require("configs.lsp.null-ls")

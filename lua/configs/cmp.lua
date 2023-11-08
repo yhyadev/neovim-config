@@ -57,7 +57,7 @@ cmp.setup({
 			vim_item.menu = ({
 				nvim_lsp = "[LSP]",
 				luasnip = "[Snippet]",
-                cody = "[Suggestion]",
+				cody = "[Suggestion]",
 				buffer = "[File]",
 				path = "[Path]",
 			})[entry.source.name]
