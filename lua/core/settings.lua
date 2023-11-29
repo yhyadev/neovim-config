@@ -24,3 +24,6 @@ opt.clipboard = "unnamedplus"
 
 -- Remove Highlight While Searching (/)
 vim.opt.hlsearch = false
+
+-- Use c syntax for .h instead of cpp
+g.c_syntax_for_h = true
