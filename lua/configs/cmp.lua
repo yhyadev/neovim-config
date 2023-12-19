@@ -5,7 +5,8 @@ if not snip_status_ok then
 	return
 end
 
-require("luasnip/loaders/from_vscode").lazy_load()
+require("luasnip.loaders.from_vscode").lazy_load()
+require("luasnip.loaders.from_lua").load({ paths = { "~/.config/nvim/lua/configs/luasnip/snippets/" } })
 
 local check_backspace = function()
 	local col = vim.fn.col(".") - 1
