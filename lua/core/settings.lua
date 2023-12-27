@@ -27,3 +27,8 @@ vim.opt.hlsearch = false
 
 -- Use c syntax for .h instead of cpp
 g.c_syntax_for_h = true
+
+-- Zig Standard Library recognition for termux users (temporary until Zig maintainers solves issue "#14146")
+if os.getenv("TERMUX_VERSION") then
+	g.zig_std_dir = "/data/data/com.termux/files/usr/lib/zig/lib/std"
+end
