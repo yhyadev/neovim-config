@@ -136,20 +136,4 @@ require("lazy").setup({
 			require("leap").add_default_mappings()
 		end,
 	},
-	-- Mini Terminal
-	{
-		"NvChad/nvterm",
-		keys = {
-			{
-				"<leader>t",
-				function()
-					require("nvterm.terminal").toggle("horizontal")
-				end,
-				desc = "Toggle terminal",
-			},
-		},
-		config = function()
-			require("nvterm").setup()
-		end,
-	},
 })
