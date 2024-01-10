@@ -152,13 +152,4 @@ require("lazy").setup({
 			require("nvterm").setup()
 		end,
 	},
-	-- Sourcegraph for Neovim (Used to add Cody AI)
-	{
-		"sourcegraph/sg.nvim",
-		dependencies = { "nvim-lua/plenary.nvim" },
-
-        keys = {
-            {"cody"}
-        }
-	},
 })
