@@ -30,6 +30,9 @@ lspconfig.html.setup({
 lspconfig.cssls.setup({
 	capabilities = capabilities,
 })
+lspconfig.intelephense.setup({
+    capabilities = capabilities,
+})
 
 require("configs.lsp.mason")
 require("configs.lsp.null-ls")
