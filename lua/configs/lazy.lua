@@ -59,6 +59,7 @@ require("lazy").setup({
 		build = "make install_jsregexp",
 		dependencies = "rafamadriz/friendly-snippets",
 	},
+
 	-- File Explorer
 	{
 		"nvim-tree/nvim-tree.lua",
@@ -70,11 +71,13 @@ require("lazy").setup({
 			require("configs.nvim-tree")
 		end,
 	},
+
 	-- Icons
 	{
 		"nvim-tree/nvim-web-devicons",
 		lazy = true,
 	},
+
 	-- Statusline
 	{
 		"nvim-lualine/lualine.nvim",
@@ -82,6 +85,7 @@ require("lazy").setup({
 			require("configs.lualine")
 		end,
 	},
+
 	-- Indent Highlighter
 	{
 		"lukas-reineke/indent-blankline.nvim",
@@ -89,8 +93,10 @@ require("lazy").setup({
 			require("ibl").setup()
 		end,
 	},
+
 	-- UI Improves
 	"nvim-telescope/telescope-ui-select.nvim",
+
 	-- Finder
 	{
 		"nvim-telescope/telescope.nvim",
@@ -106,6 +112,7 @@ require("lazy").setup({
 			require("telescope").load_extension("ui-select")
 		end,
 	},
+
 	-- Syntax Highlighter
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -114,26 +121,13 @@ require("lazy").setup({
 			require("configs.treesitter")
 		end,
 	},
-	-- (Arguments / Parameters) Highlighter
-	{
-		"m-demare/hlargs.nvim",
-		config = function()
-			require("hlargs").setup()
-		end,
-	},
+
 	-- Auto Pairs {} () []
 	{
 		"windwp/nvim-autopairs",
 		event = "InsertEnter",
 		config = function()
 			require("nvim-autopairs").setup({})
-		end,
-	},
-	-- Fast Search
-	{
-		"ggandor/leap.nvim",
-		config = function()
-			require("leap").add_default_mappings()
 		end,
 	},
 })
