@@ -14,18 +14,18 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 	-- Theme
 	{
-		"marko-cerovac/material.nvim",
+		"catppuccin/nvim",
+        name = "catppuccin",
 		priority = 1000,
 		config = function()
-			vim.g.material_style = "deep ocean"
-			require("material").setup({
-				lualine_style = "stealth",
+			require("catppuccin").setup({
+				flavour = "mocha",
+                no_italic = true,
 			})
 
-			vim.cmd([[colorscheme material]])
+			vim.cmd([[colorscheme catppuccin]])
 		end,
 	},
-
 	-- Lsp
 	{
 		"neovim/nvim-lspconfig",
