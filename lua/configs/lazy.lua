@@ -28,7 +28,17 @@ require("lazy").setup({
     },
 
     -- WakaTime
-    { 'wakatime/vim-wakatime', lazy = false },
+    { "wakatime/vim-wakatime", lazy = false },
+
+    -- BufferLine
+    {
+        "akinsho/bufferline.nvim",
+        dependencies = "nvim-tree/nvim-web-devicons",
+        config = function()
+            require("bufferline").setup({})
+        end
+    },
+
 
     -- Lsp
     {
@@ -108,7 +118,7 @@ require("lazy").setup({
         keys = {
             { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
             { "<leader>fg", "<cmd>Telescope live_grep<cr>",  desc = "Live grep" },
-            { "<leader>fb", "<cmd>Telescope buffers<cr>",    desc = "Buffers" },
+            { "<leader>b",  "<cmd>Telescope buffers<cr>",    desc = "Buffers" },
         },
         cmd = "Telescope",
         dependencies = "nvim-lua/plenary.nvim",
