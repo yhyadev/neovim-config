@@ -23,7 +23,7 @@ lspconfig.lua_ls.setup({
 		},
 	},
 })
-lspconfig.emmet_ls.setup({})
+lspconfig.emmet_language_server.setup({})
 lspconfig.html.setup({
 	capabilities = capabilities,
 })
