@@ -12,23 +12,25 @@ lspconfig.svelte.setup({})
 lspconfig.pyright.setup({})
 lspconfig.astro.setup({})
 lspconfig.lua_ls.setup({
-	settings = {
-		Lua = {
-			runtime = {
-				version = "LuaJIT",
-			},
-			diagnostics = {
-				globals = { "vim" },
-			},
-		},
-	},
+    settings = {
+        Lua = {
+            runtime = {
+                version = "LuaJIT",
+            },
+            diagnostics = {
+                globals = { "vim" },
+            },
+        },
+    },
 })
-lspconfig.emmet_language_server.setup({})
+lspconfig.emmet_language_server.setup({
+    filetypes = { "astro", "svelte", "typescriptreact", "javascriptreact", "html", "css", "scss", "sass" },
+})
 lspconfig.html.setup({
-	capabilities = capabilities,
+    capabilities = capabilities,
 })
 lspconfig.cssls.setup({
-	capabilities = capabilities,
+    capabilities = capabilities,
 })
 lspconfig.intelephense.setup({
     capabilities = capabilities,
