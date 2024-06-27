@@ -19,3 +19,5 @@ require("nvim-treesitter.configs").setup({
 		},
 	},
 })
+
+require("configs.tree-sitter-syphon")
